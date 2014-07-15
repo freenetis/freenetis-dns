@@ -1,0 +1,4 @@
+# /etc/cron.d/freenetis-dns: Regular CRON file for freenetis-dns package (triggered each minute)
+
+SHELL=/bin/sh
+*/2 *     * * *   root    python /root/freenetis-dns-sync.py >>/var/log/freenetis-dns.log 2>&1
